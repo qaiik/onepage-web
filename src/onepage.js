@@ -8,6 +8,7 @@ o = {
     }
     On404(html) {
       this.routemklinks["404"] = html;
+    }
     start() {
       window.addEventListener('locationchange', function(){
         if (typeof this.routemklinks[location.hash] === "string") {
